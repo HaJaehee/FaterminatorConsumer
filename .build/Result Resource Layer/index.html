@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>Wearable UI</title>
+	<link rel="stylesheet"  href="lib/tau/wearable/theme/default/tau.min.css">
+	<!-- load theme file for your application -->
+	<link rel="stylesheet"  href="css/style.css">
+</head>
+<body>
+	<div class="ui-page ui-page-active" id="main">
+		<header class="ui-header"style="height:60px;">
+			<h2 class="ui-title" style="padding-top:0px;">Faterminator</h2>
+		</header>
+		<div class="ui-content content-padding">
+			<div class="ui-grid-col-3 button-group-height" >
+				<button type="button" class="ui-btn" style="height:40px;padding-top:7px;"onclick="connect();">Connect</button>
+				<button type="button" class="ui-btn" style="height:40px;padding-top:7px;" onclick="fetch();">Fetch</button>
+				<button type="button" class="ui-btn" style="height:40px;padding-top:7px;" onclick="disconnect();">Disconnect</button>
+			</div>
+			<div id="resultBoard" style="font-size:medium;">::hello Faterminator. Connect host!
+			</div>
+			<div style="width:100%;height:95px;border:1px solid;margin-top:10px;display:block;text-align:center;font-size:x-large;" id="atv-cal" ></div>
+			<div style="width:100%;height:35px;border:1px solid;margin-top:10px;display:block;text-align:center;font-size:medium;" id="hr-time"></div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+<!-- load javascript file for your application -->
+<script src="js/main.js"></script>
+</html>
